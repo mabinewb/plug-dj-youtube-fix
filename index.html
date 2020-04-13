@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>플디픽스</title>
+    <script src="pdfix.js"></script>
+    <style>@import "pdfix.css";</style>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-top: 100px;">플디픽스</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 14</div>
+            <img src="pic1.png" style="width:fit-content;">
+            <div class="text"><a href="https://console.developers.google.com/" target="_blank">Google Developers Console(클릭)</a>에 접속하여 구글 아이디로 로그인합니다.<br>API 키를 발급받아야 하므로, 약관에 동의한 후 [동의 및 계속하기]를 클릭합니다.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 14</div>
+            <img src="pic2.png" style="width:fit-content;">
+            <div class="text">처음 Developers Console에 로그인하면 프로젝트를 생성해야 합니다.<br>[프로젝트 만들기]를 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 14</div>
+            <img src="pic3.png" style="width:fit-content;">
+            <div class="text">프로젝트 이름이 크게 중요하진 않으니, 대충 입력하고 프로젝트를 만들어주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 14</div>
+            <img src="pic4.png" style="width:fit-content;">
+            <div class="text">프로젝트가 생성되고 나면 유튜브 데이터 API를 활성화시켜야합니다.<br>[API 및 서비스 사용 설정]을 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 14</div>
+            <img src="pic5.png" style="width:fit-content;">
+            <div class="text">API 목록이 나오면 "YouTube Data API v3"을 찾아 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 14</div>
+            <img src="pic6.png" style="width:fit-content;">
+            <div class="text">API 활성화를 위해 [사용 설정]을 클릭하세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 14</div>
+            <img src="pic7.png" style="width:fit-content;">
+            <div class="text">API가 활성화되었으면 API 키를 발급받아야합니다.<br>[사용자 인증 정보 만들기]를 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 14</div>
+            <img src="pic8.png" style="width:fit-content;">
+            <div class="text">뭔가 선택하라고 나오는데, 무시하고 [API 키] 링크를 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 14</div>
+            <img src="pic9.png" style="width:fit-content;">
+            <div class="text">API 키 이름을 대충 입력하고(기본값을 사용해도 무방), [생성] 버튼을 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 14</div>
+            <img src="pic10.png" style="width:fit-content;">
+            <div class="text">생성된 API 키를 아래 빈칸에 입력해주세요. (API 키 우측의 아이콘을 클릭하면 복사됩니다.)<br><input type="text" id="api_key" style="margin-top:10px; width:350px;" onblur="setAPIkey();"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 14</div>
+            <img src="pic11.png" style="width:fit-content;">
+            <div class="text">북마크 관리자(단축키: Ctrl+Shift+O)를 열고, 북마크바나 다른 적절한 폴더에서 우측 상단 점 세개 버튼을 클릭합니다.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 14</div>
+            <img src="pic12.png" style="width:fit-content;">
+            <div class="text">[새 북마크 추가]를 클릭해주세요.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">13 / 14</div>
+            <img src="pic13.png" style="width:fit-content;">
+            <div class="text">[이름]란에 적절한 이름을 입력하고, [URL]란에 아래 내용을 복사해넣고 북마크를 저장해주세요.<br><input type="text" id="fix_url" style="margin-top:10px;width:450px;" readonly>&nbsp;<button onclick="copy();">복사</button></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">14 / 14</div>
+            <img src="pic14.png" style="width:fit-content;">
+            <div class="text"><h1>끝!</h1>원하는 plug.dj 페이지에 접속한 후, 추가한 플디픽스 북마크를 클릭하면 픽스가 적용되었음을 알리는 창이 나타납니다.<br>픽스가 적용되었다면 유튜브 검색이 정상 작동하는지 확인해보세요. (페이지를 새로고침하면 픽스도 다시 적용해야합니다.)<br><br>참고 : 북마크바를 활성화(단축키: Ctrl+Shift+B)하면 북마크 접근이 더 쉽습니다.</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>
