@@ -6,7 +6,9 @@ window.onload = function () {
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    if(n == 1 && slideIndex == 10 && document.querySelector("#api_key").value.length == 0){
+        alert("다음 단계로 넘어가기 전에 입력칸에 API 키를 입력해주세요!");
+    } else showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls

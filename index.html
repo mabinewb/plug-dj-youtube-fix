@@ -60,7 +60,7 @@
         <div class="mySlides fade">
             <div class="numbertext">10 / 14</div>
             <img src="pic10.PNG" style="width:fit-content;">
-            <div class="text">생성된 API 키를 아래 빈칸에 입력해주세요. (API 키 우측의 아이콘을 클릭하면 복사됩니다.)<br><input type="text" id="api_key" style="margin-top:10px; width:350px;" onblur="setAPIkey();"></div>
+            <div class="text">생성된 API 키를 아래 빈칸에 입력해주세요. (API 키 우측의 아이콘을 클릭하면 복사됩니다.)<br><input type="text" id="api_key" style="margin-top:10px; width:350px;" onblur="setAPIkey();" placeholder="API 키를 여기에 입력해주세요."></div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">11 / 14</div>
@@ -88,7 +88,7 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div style="text-align:center; display: none;">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
