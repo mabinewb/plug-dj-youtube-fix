@@ -2,6 +2,7 @@
 body {
     font-family: 'Nanum Gothic', sans-serif;
     line-height: 140%;
+    text-align: center;
 }
 
 * {box-sizing:border-box}
