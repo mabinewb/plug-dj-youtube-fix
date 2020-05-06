@@ -15,12 +15,12 @@ function plusSlides(n) {
                 if (request.status === 200) {
                     alert("입력된 API키가 유효합니다.");
                     showSlides(slideIndex += n);
-                } else if (request.status === 400) {
+                } else {
                     var response = JSON.parse(request.responseText);
                     if (response.error)
                         alert("입력된 API키가 유효하지 않습니다. (오류 메시지 : " + JSON.stringify(response.error.errors[0]) + ")");
-                } else {
-                    alert("기타 오류 발생");
+                    else
+                        alert("기타 오류 발생");
                 }
             }
         };
